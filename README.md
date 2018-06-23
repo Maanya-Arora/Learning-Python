@@ -1,3 +1,3 @@
-#Maanya's Repository
-Welcome to Maanya's Repository
-##SkoolofCode
+# Maanya's Repository
+ Welcome to Maanya's Repository
+## SkoolofCode
