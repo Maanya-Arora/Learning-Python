@@ -1,5 +1,5 @@
 import random
-import sys
+import sys 
 def passwordfunction():
 	nums = ('123456789')
 	color = ('blu3','p!nk','grEen','y3ll0w','or@nge','r3d','purp!e')
@@ -7,7 +7,7 @@ def passwordfunction():
 	city = ('seaTtle','anaHiem','toKyo','loNDon','paRis')
 	animal = ('zebr@','d0g','!ion','dr@gon','c@t')
 	syms = ('!@#$%^&*')
-	ask = (input('Do you need a random password generated? Go ahead and enter a number from 1-5:'))
+	ask = (input('Hi! We all know how hard it is to think of a secure password now days, so I am here to help! My name is PasswordBot! Enter a random number from 1-5 that will help determine a password combo for you:'))
 	if ask == '1':
 		password1 = random.choice(city) + random.choice(syms) * 2 + random.choice(animal) 
 		print (password1)
@@ -25,6 +25,19 @@ def passwordfunction():
 		print(password5)
 	else:
 		sys.exit('Sorry! Your input is invalid please try again.')
-	print(input("Were you satisfied with your password:"))
-	print("Thank you for your feedback, Enjoy your day!")
+	satisfied = (input("Were you satisfied with your password? Enter 1 for yes and 2 for no:"))
+	if satisfied == '1':
+		print("Thank you and Have a wonderful day! :)")
+	elif satisfied != '1' or satisfied != '2':
+		sys.exit("Your input was invalid. Please try again!")
+	elif satisfied == '2':
+		sorry = (input("I am sorry to hear that :(! Would you like to try again? Enter 1 for yes and 2 for no:"))
+		if sorry == '1':
+			passwordfunction()
+		elif sorry == '2':
+			print('I am sorry for the inconvienience. Have a nice day.')
+		elif sorry != '1' or sorry != '2':
+			sys.exit("your input was invalid. Please try again")
+
+	return
 passwordfunction()
