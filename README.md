@@ -1,4 +1,3 @@
-# Maanya's Repository
- Welcome to Maanya's Repository
-## Learning Python
+# Learning Python
+ Basic python programs exploring different concepts
 
